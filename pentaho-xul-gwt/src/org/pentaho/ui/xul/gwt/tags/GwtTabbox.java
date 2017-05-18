@@ -117,7 +117,7 @@ public class GwtTabbox extends AbstractGwtXulContainer implements XulTabbox {
         continue;
       }
       GwtTabWidget widget =
-          new GwtTabWidget( tabs.getTabByIndex( i ).getLabel(), "", tabPanel, ( (Widget) panel.getManagedObject() ) );
+          new GwtTabWidget( tabs.getTabByIndex( i ).getLabel(), tabs.getTabByIndex( i ).getTooltiptext(), tabPanel, ( (Widget) panel.getManagedObject() ) );
       Widget panelWidget = (Widget) panel.getManagedObject();
       panelWidget.setStylePrimaryName( "pentaho-tabPanel" );
       tabPanel.add( panelWidget, widget );
